@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:700|Raleway:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="сувениры,обложки,подарки,варенье,шоколад,изделия из дерева,открытки">
+        <meta name="keywords" content="сувениры,обложки на паспорт,варенье из шишек,шоколад,сувенирный шоколад">
+        <title>IRON VLADI</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <!-- Sprite -->
+        <svg style="display: none;">
+
+            <symbol id="facebook" viewBox="0 0 496 496">
+                <g>
+                    <path d="M317.312,170.128h-1.696c5.984-2.304,10.24-8.128,10.24-14.928V99.648c0-8.816-7.12-15.968-15.936-16l-45.856-0.192
+                        c-57.92,0-78.464,42.16-78.464,78.256v8.416c-8.592,0.288-15.472,7.344-15.472,16V248c0,8.672,6.88,15.712,15.472,16v138.672
+                        c0,8.832,7.168,16,16,16h61.872c8.832,0,16-7.168,16-16V264h32.416c8.304,0,15.216-6.336,15.92-14.592l5.44-61.872
+                        c0.384-4.48-1.12-8.896-4.144-12.208C326.08,172.016,321.792,170.128,317.312,170.128z M297.232,232h-33.76
+                        c-8.832,0-16,7.168-16,16v138.672H217.6V248c0-8.672-6.88-15.712-15.472-16v-29.872c8.592-0.288,15.472-7.344,15.472-16v-24.4
+                        c0-17.28,6.048-46.256,46.4-46.256l29.856,0.128v23.568l-16.048-0.096c-28.88,0-30.336,21.456-30.336,25.76v21.296
+                        c0,8.832,7.168,16,16,16h36.384L297.232,232z"/>
+                    <path d="M366.8,0H129.136C54.32,0,0,54.336,0,129.184v237.648C0,441.664,54.304,496,129.136,496H366.8
+                        c74.864,0,129.2-54.336,129.2-129.168V129.184C496,54.336,441.664,0,366.8,0z M464,366.832c0,57.2-39.968,97.168-97.2,97.168
+                        H129.136C71.952,464,32,424.048,32,366.832V129.184C32,71.968,71.952,32,129.136,32H366.8c57.232,0,97.2,39.968,97.2,97.184
+                        V366.832z"/>
+                </g>
+
+            </symbol>
+
+            <symbol id="twit" viewBox="0 0 512 512">
+
+                <g>
+                    <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+	c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+	c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+	c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+	c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+	c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+	C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+	C480.224,136.96,497.728,118.496,512,97.248z"/>
+                </g>
+
+            </symbol>
+
+            <symbol id="insta" viewBox="0 0 24 24">
+                <g>
+                    <path d="m11.998 3.139c-3.631 0-7.079-.323-8.396 3.057-.544 1.396-.465 3.209-.465 5.805 0 2.278-.073 4.419.465 5.804 1.314 3.382 4.79 3.058 8.394 3.058 3.477 0 7.062.362 8.395-3.058.545-1.41.465-3.196.465-5.804 0-3.462.191-5.697-1.488-7.375-1.7-1.7-3.999-1.487-7.374-1.487zm-.794 1.597c7.574-.012 8.538-.854 8.006 10.843-.189 4.137-3.339 3.683-7.211 3.683-7.06 0-7.263-.202-7.263-7.265 0-7.145.56-7.257 6.468-7.263zm5.524 1.471c-.587 0-1.063.476-1.063 1.063s.476 1.063 1.063 1.063 1.063-.476 1.063-1.063-.476-1.063-1.063-1.063zm-4.73 1.243c-2.513 0-4.55 2.038-4.55 4.551s2.037 4.55 4.55 4.55 4.549-2.037 4.549-4.55-2.036-4.551-4.549-4.551zm0 1.597c3.905 0 3.91 5.908 0 5.908-3.904 0-3.91-5.908 0-5.908z"/>
+                </g>
+
+
+            </symbol>
+
+
+        </svg>
+
+        <!---header-->
+       <header class="header" id="header">
+           <div class="container">
+               <div class="header__inner">
+                   <div class="header__logo">
+                       <img src="img/vlad.jpg" id="imgvlad" alt="">
+                   </div>
+                   <nav class="nav" id="nav">
+                       <a class="nav__link" href="#" data-scroll="#features">Технологии</a>
+                       <a class="nav__link" href="#" data-scroll="#works">Продукция</a>
+                       <a class="nav__link" href="#" data-scroll="#team">Команда</a>
+                       <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
+                       <a class="nav__link" href="#" data-scroll="#download">Контакты</a>
+                   </nav>
+
+                   <button class="burger" type="button" id="navToggle">
+                       <span class="burger__item">Menu</span>
+                   </button>
+
+               </div>
+           </div>
+
+       </header>
+<!---intro-->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+            <h1 class="intro__title">Сувениры, подарки, полезные продукты 
+                для вашей семьи и близких</h1>
+                <h2 class="intro__subtitle">
+                    Натуральная, полезная и только оригинальная продукция.
+                </h2>
+                <a class="btn btn--red" href="#">узнать больше</a>
+                
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <!---features-->
+    <div class="container" id="features">
+        <div class="features">
+            <div class="features__items">
+                <img class="features_icon" src="icon/feature1.svg" height="30px" alt="">
+                <h4 class="features_title">Мастерклассы</h4>
+                <div class="features__text">Проводим мастерклассы. предварительная
+                    запись. регистрация. памятки, инструкции, работа над ошибками</div>
+            </div>
+            <div class="features__items">
+                <img class="features_icon" src="icon/feature2.svg" height="30px" alt="">
+                <h4 class="features_title">Онлайн курсы</h4>
+                <div class="features__text">Проводим мастерклассы. предварительная
+                    запись. регистрация. памятки, инструкции, работа над ошибками</div>
+            </div>
+            <div class="features__items">
+                <img class="features_icon" src="icon/feature3.svg" height="30px" alt="">
+                <h4 class="features_title">выставки</h4>
+                <div class="features__text">Проводим мастерклассы. предварительная
+                    запись. регистрация. памятки, инструкции, работа над ошибками</div>
+            </div>
+            <div class="features__items">
+                <img class="features_icon" src="icon/feature4.svg" height="30px" alt="">
+                <h4 class="features_title">Повышение квалификации</h4>
+                <div class="features__text">Проводим мастерклассы. предварительная
+                    запись. регистрация. памятки, инструкции, работа над ошибками</div>
+            </div>
+            <div class="features__items">
+                <img class="features_icon" src="icon/feature5.svg" height="30px" alt="">
+                <h4 class="features_title">Изготовление на заказ</h4>
+                <div class="features__text">Проводим мастерклассы. предварительная
+                    запись. регистрация. памятки, инструкции, работа над ошибками</div>
+            </div>
+            <div class="features__items">
+                <img class="features_icon" src="icon/feature6.svg" height="30px" alt="">
+                <h4 class="features_title">доставка</h4>
+                <div class="features__text">Проводим мастерклассы. предварительная
+                    запись. регистрация. памятки, инструкции, работа над ошибками</div>
+            </div>
+        </div> <!--feature--> 
+    </div> <!--container-->
+
+    <!-- Works -->
+    <div class="works" id="works">
+        <div class="works__items">
+            <img class="works_photo" src="img/work1.jpg" width="515px" alt="">
+            <div class="works__content">
+                <div class="works_title">оригинальные открытки</div>
+                <div class="works_text">на любой праздник, событие, мероприятие</div>
+            </div>
+        </div>
+        <div class="works__items">
+            <img class="works_photo" src="img/work2.jpg" width="515px" alt="">
+            <div class="works__content">
+                <div class="works_title">обложки на документы</div>
+                <div class="works_text">изготовлнение по вашему шаблону</div>
+            </div>
+        </div>
+        <div class="works__items">
+            <img class="works_photo" src="img/work3.jpg" width="515px" alt="">
+            <div class="works__content">
+                <div class="works_title">сувениры из дерева</div>
+                <div class="works_text">подносы, подставки,настенные рамки</div>
+            </div>
+        </div>
+        <div class="works__items">
+            <img class="works_photo" src="img/work4.jpg" width="515px" alt="">
+            <div class="works__content">
+                <div class="works_title">скэтчи, записные книжки, ежедневники</div>
+                <div class="works_text">если что боишься забыть напиши и точно вспомнишь</div>
+            </div>
+        </div>
+        <div class="works__items">
+            <img class="works_photo" src="img/work5.jpg" width="515px" alt="">
+            <div class="works__content">
+                <div class="works_title">тетради, дневники, памятки</div>
+                <div class="works_text">средние и толстые 36./ 96л.</div>
+            </div>
+        </div>
+        <div class="works__items">
+            <img class="works_photo" src="img/work6.jpg" width="515px" alt="">
+            <div class="works__content">
+                <div class="works_title">календари, буклеты</div>
+                <div class="works_text">напоминания, все праздники и традиции</div>
+            </div>
+        </div>
+        <div class="works__items">
+            <img class="works_photo" src="img/work7.jpg" width="350px" alt="">
+            <div class="works__content">
+                <div class="works_title">позитивные сувенирные магнитики</div>
+                <div class="works_text">простой но всегда приятный подарок</div>
+            </div>
+        </div>
+        <div class="works__items">
+            <img class="works_photo" src="img/work8.jpg" width="350px" alt="">
+            <div class="works__content">
+                <div class="works_title">изделия из шоколада</div>
+                <div class="works_text">подарил а потом и с чаем съел!</div>
+            </div>
+        </div>
+    </div><!-- works/ -->
+
+    <!-- team -->
+    <div class="team" id="team">
+        <div class="container">
+            <div class="team__inner">
+                <div class="team__item">
+                    <img class="team__photo" src="img/team1.jpg" width="400" alt="">
+                    <div class="team__name">Владимир Шапцев</div>
+                    <div class="team__prof">Исполнительный Директор</div>
+                    <div class="team__text">
+                  <p>Любая задача, любая поставленная цель 
+                    всегда будет достигнута</p>
+                    <p>pанализ,системный подход,
+                    хлоднокровный расчёт равно результат</p></div>
+                    <div class="social">
+                        <a class="social__item" href="https://www.facebook.com/profile.php?id=100030503899567" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://vk.com/vladimir.shaptsev" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twit"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://www.instagram.com/iron.vladi/?hl=ru" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#insta"></use>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team2.jpg" alt="">
+                    <div class="team__name">Елена Шапцева</div>
+                    <div class="team__prof">Арт Директор</div>
+                    <div class="team__text">
+                  <p>Любая задача, любая поставленная цель 
+                    всегда будет достигнута</p>
+                    <p>pанализ,системный подход,
+                    хлоднокровный расчёт равно результат</p></div>
+                    <div class="social">
+                        <a class="social__item" href="https://www.facebook.com/gallery.art.siberia" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://vk.com/elena.shaptseva" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twit"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://www.instagram.com/gallery_art_siberia/?hl=ru" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#insta"></use>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team3.jpg" width="400" alt="">
+                    <div class="team__name">Аннета Шапцева</div>
+                    <div class="team__prof">Дизайнер</div>
+                    <div class="team__text">
+                  <p>Любая задача, любая поставленная цель 
+                    всегда будет достигнута</p>
+                    <p>pанализ,системный подход,
+                    хлоднокровный расчёт равно результат</p></div>
+                    <div class="social">
+                        <a class="social__item" href="https://vk.com/anetta_like" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://vk.com/anetta_like" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twit"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://www.instagram.com/anetta_like/?hl=ru" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#insta"></use>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team4.jpg" width="255" alt="">
+                    <div class="team__name">Котейка</div>
+                    <div class="team__prof">разработчик</div>
+                    <div class="team__text">
+                  <p>Любая задача, любая поставленная цель 
+                    всегда будет достигнута</p>
+                    <p>pанализ,системный подход,
+                    хлоднокровный расчёт равно результат</p></div>
+                    <div class="social">
+                        <a class="social__item" href="https://www.facebook.com/PavelPopovNik" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://vk.com/id15629520" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twit"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://www.instagram.com/pauldropoff/?hl=ru" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#insta"></use>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+                    
+            </div><!--/team__inner -->
+        </div><!--/.container -->
+                </div><!--/team -->
+            </div>
+        </div>
+    </div>
+
+    
+<!-- reviews -->
+    <div class="reviews" id="reviews">
+
+        <div class="container">
+            <div class="reviews__slider" id="reviewsSlider">
+                <div class="slick-item">
+            <div class="reviews__item">
+                <div class="reviews__photo">
+                    <img class="reviews__img" src="img/reviews.jpg" width="700px" alt="">
+                </div>
+                <div class="reviews__content">
+                    <div class="reviews__text">
+                        Прекрасно проделанная работа. отличный дизайн,стиль и вкус. Талантливые люди, так держать! рекомендую всем!
+                    </div>
+                    <div class="reviews__author">
+                        Ричард Гир, профессиональный актёр и простой нормальный мужик
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+           <div class="slick-item">
+            <div class="reviews__item">
+                <div class="reviews__photo">
+                    <img class="reviews__img" src="img/reviews.jpg" width="700px" alt="">
+                </div>
+                <div class="reviews__content">
+                    <div class="reviews__text">
+                        круто, офигенно, незабываемо, это лучший день в моей сранной жизни
+                    
+                    </div>
+                    <div class="reviews__author">
+                        Ричард Гир, профессиональный актёр и простой нормальный мужик
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </div><!-- /container -->
+    </div><!-- /reviews -->
+
+
+    <!-- /Download -->
+    <div class="download" id="download">
+        <div class="container">
+            <h3 class="download__title">
+                Вы готовы присоединиться к нам?
+            </h3>
+            <div class="download__text">
+                <p>сделай сегодня увидишь результат завтра...</p>
+            </div>
+            <a class="btn  btn--red  btn--long" href="#">скачать здесь</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <h4 class="footer__title">Местонахождение</h4>
+                    <address class="footer__address">
+                        <div>г. Новосибирск, ул Дачная д.333 офис123</div>
+                        <div>предварительная запись</div>
+
+                    </address>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__title">Социальные ссылки</h4>
+                    <div class="social social--footer">
+                        <a class="social__item" href="https://www.facebook.com/profile.php?id=100030503899567" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://vk.com/iron.vladi" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twit"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://www.instagram.com/iron.vladi/?hl=ru" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#insta"></use>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__title">IronVladi</h4>
+                    <div class="footer__text">
+                        <p>На рынке более 20 лет. Опыт, надёжность, успех</p>
+                    </div>
+                </div>
+                
+                </div><!-- /footer__inner -->
+            </div><!-- /container -->
+        </div>
+        <div class="copyright">
+            <div class="container">
+          <div class="copyright__text">
+              <div>все права защищены</div> 
+              <div>Новосибирск 2020</div>
+              <div>Карантин<span> by Paul Dropoff</span></div>
+          </div>
+        </div>
+    </div>
+    
+    </footer>
+
+     <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
+    </body>
+</html>
